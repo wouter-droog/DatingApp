@@ -50,12 +50,5 @@ export class MemberDetailComponent implements OnInit {
     return imageUrls;
   }
 
-  // user now loaded via the member-detail.resolver
-  // loadUser() {
-  //   this.userService.getUser(+this.route.snapshot.params['id']).subscribe((user: User) => {
-  //     this.user = user;
-  //   }, error => {
-  //     this.alerify.error(error);
-  //   });
-  // }
+
 }
