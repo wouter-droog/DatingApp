@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using AutoMapper;
@@ -40,6 +41,7 @@ namespace DatingApp.API.Controllers
             var userToReturn = _mapper.Map<UserForDetailedDto>(user);
             return Ok(userToReturn);
         }
+
 
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateUser(int id, UserForUpdateDto userForUpdateDto)
